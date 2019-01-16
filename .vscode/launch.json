@@ -6,6 +6,26 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ShortestPath",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ShortestPath",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MyGraph",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "MyGraph",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Radix",
             "request": "launch",
             "cwd": "${workspaceFolder}",

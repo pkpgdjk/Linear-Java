@@ -230,8 +230,8 @@ public class DrawTriClass extends JFrame {
         double[] d_point3 = Arrays.stream(this.point3).mapToDouble(i->(double)i).toArray();
         angle *= -1;
         double[] old_center = {
-            (d_point1[0] + d_point2[0] + d_point3[0]) / 3,
-            (d_point1[1] + d_point2[1] + d_point3[1]) / 3
+            d_point1[0],
+            d_point1[1] 
         };
         double[][] m_rotate = {
             { Math.cos(Math.toRadians(angle)) , -(Math.sin(Math.toRadians(angle)))} ,
@@ -240,6 +240,7 @@ public class DrawTriClass extends JFrame {
         d_point1 = Matrix.multiply(m_rotate, d_point1);
         d_point2 = Matrix.multiply(m_rotate, d_point2);
         d_point3 = Matrix.multiply(m_rotate, d_point3);
+        this.moveCenterTo(d_point1, d_point2, d_point3, old_center);
 
         this.setColor(Color.ORANGE);
         this.drawTriangle(

@@ -10,7 +10,7 @@ public class DrawGUI {
         String[] smove_to = "30,-50".split(",");
 
         double scale = 2.5;
-        int rotate = -90;
+        int rotate = 90;
         // int refection_type = 5;
 
         Integer[] point1 = Arrays.stream(spoint1).map(Integer::parseInt).toArray(Integer[]::new);
